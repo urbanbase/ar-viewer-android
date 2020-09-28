@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UBARViewerSample</string>
+
+    <string name="toast_message_internet_error" translatable="false">일시적인 오류가 발생했습니다. 잠시후 다시 시도해 주세요.</string>
+</resources>

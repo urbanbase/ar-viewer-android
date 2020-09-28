@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <FrameLayout
+                android:id="@+id/fl_select_line"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:visibility="invisible"
+                android:background="@drawable/bg_circle_style"
+                android:layout_gravity="center"/>
+
+            <FrameLayout
+                android:id="@+id/fl_style"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_circle"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/iv_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle"
+                    android:src="@drawable/bg_color_chip_null"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_select_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_style_name"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#cccccc"
+            android:lineSpacingMultiplier="0.7"
+            android:includeFontPadding="false"
+            android:text="Style-name 1"/>
+    </LinearLayout>
+</FrameLayout>

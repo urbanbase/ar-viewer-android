@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.urbanbase.app.arviewer.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+        <meta-data
+            android:name="com.urbanbase.sdk.arviewer.apis.key"
+            android:value="@string/arviewer_apis_key" />
+
+        <activity android:name=".java.measure.MeasureJavaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".java.product.ProductJavaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".java.ar.ARJavaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".java.MainJavaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kotlin.product.ProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kotlin.ar.ARActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".kotlin.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>
