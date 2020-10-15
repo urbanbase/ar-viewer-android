@@ -11,7 +11,6 @@ ARViewer 는 Android 의 Sceneform 에 기반한 정적 라이브러리입니다
 * OpenGL 3.0 이상 지원 단말기
 
 > 'SDK 를 사용하기 위해 Api Key 및 패키지명 인증을 거친 후 사용 가능 합니다.'
->> 'Api Key 및 패키지 명 인증은 다음 링크를 통해 확인 가능 합니다.'
 ## Importing SDK
 ### SDK 라이브러리 파일 추가
 Project폴더/app/libs 에 arviewer.aar 파일 붙여넣기
